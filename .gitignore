@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.rpyc
+*.bak
+game/cache/
+game/saves/
+log.txt
+traceback.txt
+errors.txt
+artifacts/test-saves/
+tests/screenshots/

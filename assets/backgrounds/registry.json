@@ -1,0 +1,108 @@
+[
+  {
+    "id": "entrance",
+    "scene_name": "校园入口",
+    "real_location": "西土城校区入口",
+    "time_of_day": "上午",
+    "source": "原创程序绘制占位图；无用户照片",
+    "raw_path": null,
+    "processed_path": null,
+    "style_version": "placeholder-v1",
+    "game_path": "images/backgrounds/entrance.png",
+    "usage": [
+      "start / Scene 1",
+      "main_menu"
+    ],
+    "is_placeholder": true
+  },
+  {
+    "id": "road",
+    "scene_name": "校园道路",
+    "real_location": "校内道路，待照片确认",
+    "time_of_day": "上午",
+    "source": "原创程序绘制占位图；无用户照片",
+    "raw_path": null,
+    "processed_path": null,
+    "style_version": "placeholder-v1",
+    "game_path": "images/backgrounds/road.png",
+    "usage": [
+      "start / Scene 2"
+    ],
+    "is_placeholder": true
+  },
+  {
+    "id": "plaza",
+    "scene_name": "校园广场",
+    "real_location": "校内广场，待照片确认",
+    "time_of_day": "中午",
+    "source": "原创程序绘制占位图；无用户照片",
+    "raw_path": null,
+    "processed_path": null,
+    "style_version": "placeholder-v1",
+    "game_path": "images/backgrounds/plaza.png",
+    "usage": [
+      "start / Scene 3"
+    ],
+    "is_placeholder": true
+  },
+  {
+    "id": "library",
+    "scene_name": "图书馆",
+    "real_location": "图书馆，待照片确认",
+    "time_of_day": "下午",
+    "source": "原创程序绘制占位图；无用户照片",
+    "raw_path": null,
+    "processed_path": null,
+    "style_version": "placeholder-v1",
+    "game_path": "images/backgrounds/library.png",
+    "usage": [
+      "library_event / Scene 4"
+    ],
+    "is_placeholder": true
+  },
+  {
+    "id": "lab",
+    "scene_name": "实验室",
+    "real_location": "虚构实验室",
+    "time_of_day": "下午",
+    "source": "原创程序绘制占位图；无用户照片",
+    "raw_path": null,
+    "processed_path": null,
+    "style_version": "placeholder-v1",
+    "game_path": "images/backgrounds/lab.png",
+    "usage": [
+      "lab_event / Scene 4"
+    ],
+    "is_placeholder": true
+  },
+  {
+    "id": "cafeteria",
+    "scene_name": "食堂",
+    "real_location": "食堂，待照片确认",
+    "time_of_day": "下午",
+    "source": "原创程序绘制占位图；无用户照片",
+    "raw_path": null,
+    "processed_path": null,
+    "style_version": "placeholder-v1",
+    "game_path": "images/backgrounds/cafeteria.png",
+    "usage": [
+      "cafeteria_event / Scene 4"
+    ],
+    "is_placeholder": true
+  },
+  {
+    "id": "evening",
+    "scene_name": "傍晚校园",
+    "real_location": "校内道路，待照片确认",
+    "time_of_day": "傍晚",
+    "source": "原创程序绘制占位图；无用户照片",
+    "raw_path": null,
+    "processed_path": null,
+    "style_version": "placeholder-v1",
+    "game_path": "images/backgrounds/evening.png",
+    "usage": [
+      "evening_scene / Scene 5"
+    ],
+    "is_placeholder": true
+  }
+]

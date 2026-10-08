@@ -1,0 +1,16 @@
+[
+  {
+    "file": "BUPTStories-0.1.0-win.zip",
+    "bytes": 43078925,
+    "sha256": "82d44526632ec04089f007fa861ace01043f536924a578037bc0db164bcde532",
+    "zip_integrity": "PASS",
+    "development_files_excluded": true
+  },
+  {
+    "file": "BUPTStories-0.1.0-mac.zip",
+    "bytes": 52558902,
+    "sha256": "5c72a7d30025f31c1a4d671a342398667df0e35693845b3667dc259bb4db244c",
+    "zip_integrity": "PASS",
+    "development_files_excluded": true
+  }
+]

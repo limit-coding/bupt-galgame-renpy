@@ -1,0 +1,6 @@
+test_preserves_raw_and_maps_runtime (test_import.PhotoImport.test_preserves_raw_and_maps_runtime) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.268s
+
+OK
