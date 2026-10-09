@@ -16,7 +16,7 @@
 
 作者与许可来源：原作 https://www.bilibili.com/video/BV1tE9XBbErS/ ；作者 https://space.bilibili.com/4168597 ；收录者 ApprenTice https://space.bilibili.com/634972797 。已保存收录者 README 的原文，其中对原作声明 CC BY-NC-SA 4.0（非商业、署名、相同方式共享）。本次无法实时读取 B 站原视频及 Pixiv 原帖，不把收录库说明写成已直接核验原作者声明。保留全部来源，不把素材标为本工程原创或模型厂商官方角色；商业用途不在该说明的授权范围内。
 
-当前图为白底常态参考图，所以放在主菜单的“美术预览”中原样展示。它们尚不是透明五表情组，不能声称已经完成剧情立绘替换。后续优先寻找同设定的透明源图；若需技术抠图或补表情，也必须保留原有造型，不得再次自行改设计。
+v0.2 阶段仅提供白底原图预览。v0.3 已完成下文所述透明表情编辑与剧情替换；白底原图移至“美术预览 → 原图对照”保留展示。
 
 ## 已接入的校园背景
 
@@ -27,3 +27,13 @@
 两张背景由内置 imagegen 工具依据官网图片绘制，已接入主菜单和前两场剧情。人物图未使用 imagegen 改写。参考照片保存在开发素材目录，不进入游戏发行包。图像不是实拍，不承诺与 2026 年现状逐项一致；树木、光照和铺装细节包含艺术化处理。
 
 生成图原件位于 `source_assets/backgrounds/generated/`，运行版本位于 `game/images/backgrounds/illustrated/`。生成提示词（包括已弃用的校园人物稿）完整保存在 `docs/art-prompts-v1.json`。所有图像文件均由内置 imagegen 生成或原样复制，没有使用 CLI 生图。
+
+## v0.3：剧情透明立绘与表情
+
+用户进一步要求替换剧情占位人物并搭配表情。已使用内置 imagegen 以三张原图为编辑参考制作透明图集：每位常态、开心、惊讶、难过、生气、害羞，共 18 帧。保留原设的发型、服装、配饰及身体特征；编辑版本不是原图逐像素复制，不能再标成“未修改原图”。原始图片仍原样保存在此前目录及原图对照页面。
+
+剧情：DeepSeek 娘担任同班同学，Claude 娘担任实验室学姐，GPT 娘担任新增迎新志愿者。玩家继续第一人称。旧占位立绘全部移入 `source_assets/characters/legacy-placeholders/`，游戏不再引用。
+
+运行素材：`game/images/characters/ai-girls/{DeepSeek,Claude,ChatGPT}-v1.png`。源版本及来源登记：`source_assets/characters/expression-atlases/`。实际提示词：`docs/ai-expression-prompts.json`。引擎直接裁取图集各格，不另行修改 PNG。
+
+主菜单“美术预览”可以查看全部表情，“原图对照”查看未修改素材。三条剧情分支、表情切换、透明合成和双人站位均纳入原生引擎测试。

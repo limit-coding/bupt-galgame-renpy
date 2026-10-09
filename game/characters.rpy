@@ -1,18 +1,31 @@
 default protagonist_name = "许言"
-default classmate_name = "林晴"
-default senior_name = "沈知遥"
+define classmate_name = "DeepSeek 娘"
+define senior_name = "Claude 娘"
+define guide_name = "GPT 娘"
 define p = Character("protagonist_name", dynamic=True, color="#c3e4ef")
-define b = Character("classmate_name", dynamic=True, color="#f0c899")
-define c = Character("senior_name", dynamic=True, color="#a6ddd2")
+define b = Character("classmate_name", dynamic=True, color="#a8cefa")
+define c = Character("senior_name", dynamic=True, color="#f0c899")
+define g = Character("guide_name", dynamic=True, color="#ded5f5")
 default affection_b = 0
 default affection_c = 0
 default route = ""
 default clue = ""
 default chapter = "开学第一天"
 init python:
-    for person in ('protagonist', 'classmate', 'senior'):
-        for expression in ('normal', 'happy', 'surprised', 'sad', 'angry'):
-            renpy.image((person, expression), 'images/characters/%s_%s.png' % (person, expression))
+    # Atlas crops are performed by the renderer; original and edited PNGs stay intact.
+    AI_EXPRESSIONS = ('normal', 'happy', 'surprised', 'sad', 'angry', 'shy')
+    AI_CAST = {'classmate': 'DeepSeek', 'senior': 'Claude', 'guide': 'ChatGPT'}
+    def ai_sprite(person, expression):
+        path = 'images/characters/ai-girls/%s-v1.png' % AI_CAST[person]
+        width, height = renpy.image_size(path)
+        index = AI_EXPRESSIONS.index(expression)
+        col, row = index % 3, index // 3
+        x0, x1 = round(col * width / 3), round((col + 1) * width / 3)
+        y0, y1 = round(row * height / 2), round((row + 1) * height / 2)
+        return Transform(Crop((x0, y0, x1-x0, y1-y0), path), xysize=(460, 690))
+    for person in AI_CAST:
+        for expression in AI_EXPRESSIONS:
+            renpy.image((person, expression), ai_sprite(person, expression))
     for scene_id in ('entrance','road','plaza','library','lab','cafeteria','evening'):
         path = 'images/backgrounds/illustrated/%s-v1.png' % scene_id if scene_id in ('entrance', 'road') else 'images/backgrounds/%s.png' % scene_id
         renpy.image(('bg', scene_id), Transform(path, xysize=(1280, 720)))
@@ -31,3 +44,10 @@ transform establishing:
     xalign .5
     yalign .5
     ease 9.0 zoom 1.0
+
+# Old prototype saves stored the previous default character names.
+label after_load:
+    $ classmate_name = "DeepSeek 娘"
+    $ senior_name = "Claude 娘"
+    $ guide_name = "GPT 娘"
+    return

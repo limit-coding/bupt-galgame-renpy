@@ -4,7 +4,7 @@
 
 ## 当前资产
 
-7 张程序绘制示意背景、15 张角色表情示意立绘；均为本工程原创占位。没有复制《千恋＊万花》或其他商业游戏资产，没有使用父目录的网络图片。背景上的占位字样不会被当作正式学校标识。
+7 个背景场景：西门与摩斯码路为官网照片参考绘制，其余 5 张为程序占位图。人物使用社区 AI 娘原设的透明六表情编辑版本，共 3 张图集 / 18 帧。原图和编辑版分别保留，来源及修改记录见 `art-direction.md`。没有使用其他商业游戏资产。
 
 ## 照片清单
 
@@ -36,7 +36,7 @@ python3 tools/import_background.py /绝对路径/原图.jpg --id entrance --sour
 
 ## 立绘
 
-运行图命名：`classmate_normal.png` 等，三角色 × normal/happy/surprised/sad/angry。当前画布 470×680 RGBA。正式图建议用更高分辨率源文件统一缩放导出；同角色所有表情保持相同画布、眼睛位置及身体中心。透明边缘不留白底，站位仍由 Ren’Py 变换控制。
+运行图位于 `game/images/characters/ai-girls/`，每张为 1254×1254 RGBA、3 列 × 2 行图集。按行排列 normal/happy/surprised/sad/angry/shy。Ren’Py 在运行时裁取 418×627 单格并显示为 460×690；不改写图集。DeepSeek 对应 classmate，Claude 对应 senior，GPT 对应 guide。源图集、哈希、参考图与提示词登记在 `source_assets/characters/expression-atlases/registry.json`。原来的程序立绘已移至开发素材的 `legacy-placeholders/`，不会被运行或打包。
 
 ## 音频
 

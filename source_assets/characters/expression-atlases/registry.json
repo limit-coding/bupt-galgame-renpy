@@ -1,0 +1,86 @@
+[
+  {
+    "id": "DeepSeek",
+    "tag": "classmate",
+    "game_path": "images/characters/ai-girls/DeepSeek-v1.png",
+    "source_path": "source_assets/characters/expression-atlases/DeepSeek-v1.png",
+    "reference": "source_assets/characters/community-originals/DeepSeek-Girl.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "grid": [
+      3,
+      2
+    ],
+    "expressions": [
+      "normal",
+      "happy",
+      "surprised",
+      "sad",
+      "angry",
+      "shy"
+    ],
+    "sha256": "a0d14170b73ce87e2481cb43fbc5f84d2c564f873b6a71bc2e5cc2ff5a14af1d",
+    "type": "ai_expression_edit",
+    "tool": "built-in imagegen",
+    "modifications": "以原图制作透明六表情图集，保留原有造型；生成版本不等同原图逐像素复制",
+    "prompt_file": "docs/ai-expression-prompts.json"
+  },
+  {
+    "id": "Claude",
+    "tag": "senior",
+    "game_path": "images/characters/ai-girls/Claude-v1.png",
+    "source_path": "source_assets/characters/expression-atlases/Claude-v1.png",
+    "reference": "source_assets/characters/community-originals/Claude-Girl.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "grid": [
+      3,
+      2
+    ],
+    "expressions": [
+      "normal",
+      "happy",
+      "surprised",
+      "sad",
+      "angry",
+      "shy"
+    ],
+    "sha256": "406ee03aa8b00287f1738c00777c8e18700eb4aee80adb35b3e7367d2804ea28",
+    "type": "ai_expression_edit",
+    "tool": "built-in imagegen",
+    "modifications": "以原图制作透明六表情图集，保留原有造型；生成版本不等同原图逐像素复制",
+    "prompt_file": "docs/ai-expression-prompts.json"
+  },
+  {
+    "id": "ChatGPT",
+    "tag": "guide",
+    "game_path": "images/characters/ai-girls/ChatGPT-v1.png",
+    "source_path": "source_assets/characters/expression-atlases/ChatGPT-v1.png",
+    "reference": "source_assets/characters/community-originals/ChatGPT-Girl.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "grid": [
+      3,
+      2
+    ],
+    "expressions": [
+      "normal",
+      "happy",
+      "surprised",
+      "sad",
+      "angry",
+      "shy"
+    ],
+    "sha256": "d809f21611d029f5eab2a3a0260ff2bb28457fe4db9661900a74c8312c8f7345",
+    "type": "ai_expression_edit",
+    "tool": "built-in imagegen",
+    "modifications": "以原图制作透明六表情图集，保留原有造型；生成版本不等同原图逐像素复制",
+    "prompt_file": "docs/ai-expression-prompts.json"
+  }
+]

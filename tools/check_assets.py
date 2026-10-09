@@ -14,13 +14,35 @@ for e in entries:
         else:assert im.size==(1280,720),e['id']
     if not e['is_placeholder']:
         for key in ('raw_path','processed_path'):assert (ROOT/e[key]).is_file(),key
-for person in ('protagonist','classmate','senior'):
-    for expr in ('normal','happy','surprised','sad','angry'):
-        with Image.open(ROOT/f'game/images/characters/{person}_{expr}.png') as im:
-            assert im.mode=='RGBA' and im.size==(470,680)
+import hashlib
+atlases=json.loads((ROOT/'source_assets/characters/expression-atlases/registry.json').read_text())
+assert {entry['tag'] for entry in atlases} == {'classmate', 'senior', 'guide'}
+for entry in atlases:
+    p=ROOT/'game'/entry['game_path']
+    assert hashlib.sha256(p.read_bytes()).hexdigest()==entry['sha256']
+    assert p.read_bytes()==(ROOT/entry['source_path']).read_bytes()
+    assert (ROOT/entry['reference']).is_file()
+    with Image.open(p) as im:
+        assert im.mode=='RGBA' and list(im.size)==entry['size']
+        w,h=im.size
+        assert w%3==0 and h%2==0, 'Atlas must have integral cells'
+        assert entry['expressions']==['normal','happy','surprised','sad','angry','shy']
+        signatures=set()
+        for row in range(2):
+            for col in range(3):
+                cell=im.crop((col*w//3,row*h//2,(col+1)*w//3,(row+1)*h//2))
+                alpha=cell.getchannel('A')
+                assert alpha.getextrema()==(0,255), (entry['id'],row,col)
+                hist=alpha.histogram()
+                assert hist[0]>cell.width*cell.height*.15, 'Missing transparent area'
+                assert sum(hist[230:])>cell.width*cell.height*.15, 'Missing solid character area'
+                # Distinct face regions prevent accidentally reusing one expression six times.
+                face=cell.crop((cell.width//4,0,cell.width*3//4,cell.height//3))
+                signatures.add(hashlib.sha256(face.tobytes()).hexdigest())
+        assert len(signatures)==6, entry['id']
 assert (ROOT/'game/fonts/NotoSansSC.ttf').stat().st_size>1000000
 assert (ROOT/'docs/licenses/NotoSansSC-OFL.txt').is_file()
-print(f'PASS: {len(ids)} backgrounds; 15 transparent expression sprites; Chinese font and license.')
+print(f'PASS: {len(ids)} backgrounds; 3 transparent atlases / 18 expression frames; Chinese font and license.')
 print('Optional audio: '+', '.join(f'{n}={"present" if (ROOT/f"game/audio/{n}.ogg").exists() else "silent"}' for n in ('menu','daily','evening','campus','button')))
 
 # User requires unmodified community originals; ensure runtime bytes match their archive.

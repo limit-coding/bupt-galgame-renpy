@@ -1,0 +1,2 @@
+PASS: BUPTStories-0.3.0-win.zip; ZIP integrity, 3 atlas hashes, credits and screenshots; excludes old sprites and tests. Size 94124404 bytes; SHA256 d06ecf31dde9bdaca0838f65b07362def7774071902e779639eb5c40d325c5ec
+PASS: BUPTStories-0.3.0-mac.zip; ZIP integrity, 3 atlas hashes, credits and screenshots; excludes old sprites and tests. Size 124657122 bytes; SHA256 a98b0faf4ce74e668136798c341b47a54094cf5ea82277537584f45a2618b5f2

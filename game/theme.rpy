@@ -50,10 +50,10 @@ screen chapter_stamp():
     if chapter.startswith("01") or chapter.startswith("02"):
         text "参考实景绘制 · 非实拍" xpos 24 ypos 24 size 15 color "#ffffff" outlines [(1, "#183343", 0, 0)]
     frame:
-        xpos 920 ypos 28
-        padding (18, 10)
+        xpos 1258 xanchor 1.0 ypos 16
+        padding (12, 8)
         background Solid("#193b4de0")
-        text "[chapter]" size 18 color "#e1eee5"
+        text "[chapter]" size 16 color "#e1eee5"
 
 screen demo_end():
     modal True
@@ -63,8 +63,8 @@ screen demo_end():
         text "第一天，已存入记忆。" size 48 color "#fff1d4" xalign .5
         text "DEMO COMPLETE / [route]" size 22 color "#9dd3c7" xalign .5
         text "今日留下的线索：[clue]" size 24 xalign .5
-        text "林晴的信任：[affection_b]    沈知遥的信任：[affection_c]" size 20 xalign .5
+        text "[classmate_name]的信任：[affection_b]    [senior_name]的信任：[affection_c]" size 20 xalign .5
         text "后续章节开发中" size 24 xalign .5
-        text "已加入两张实景参考绘制背景；完整角色表情与配乐继续制作中。" size 18 xalign .5
+        text "三位 AI 娘与六种表情已加入；后续场景与配乐继续制作中。" size 18 xalign .5
         null height 20
         textbutton "返回主菜单" action Return() xalign .5 style "title_button"
