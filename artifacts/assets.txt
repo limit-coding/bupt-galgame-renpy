@@ -1,2 +1,3 @@
 PASS: 7 backgrounds; 15 transparent expression sprites; Chinese font and license.
 Optional audio: menu=silent, daily=silent, evening=silent, campus=silent, button=silent
+PASS: 3 community character references copied byte-for-byte; no redraw.

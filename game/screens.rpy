@@ -343,14 +343,14 @@ style navigation_button_text:
 
 screen main_menu():
     tag menu
-    add "images/backgrounds/entrance.png"
+    add "bg entrance"
     add Solid("#112a3aab")
     frame:
         background Solid("#183d4cec")
         xpos 70 ypos 70 xsize 450 ysize 580
         padding (36, 32)
         vbox:
-            spacing 8
+            spacing 3
             text "BUPT STORIES / 01" size 18 color "#9cd6c7"
             null height 6
             text "北邮物语" size 58 color "#fff2d8"
@@ -361,12 +361,13 @@ screen main_menu():
             textbutton "开始游戏" action Start() style "title_button"
             textbutton "读取游戏" action ShowMenu("load") style "title_button"
             textbutton "设置" action ShowMenu("preferences") style "title_button"
+            textbutton "美术预览" action ShowMenu("art_preview") style "title_button"
             textbutton "关于 / 素材说明" action ShowMenu("about") style "title_button"
             textbutton "退出" action Quit(confirm=False) style "title_button"
     vbox:
         xpos 575 ypos 557 spacing 10
         text "FIRST DAY, FIRST SIGNAL." size 24 color "#fff2d8"
-        text "可玩原型 0.1 · 背景及立绘均为占位素材" size 18 color "#edf2ed"
+        text "可玩原型 0.2 · 含两张实景参考绘制背景" size 18 color "#edf2ed"
         text "虚构故事 · 非学校官方作品" size 16 color "#c7d5d4"
 
 

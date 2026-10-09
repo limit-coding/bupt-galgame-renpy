@@ -47,6 +47,8 @@ style button:
 
 screen chapter_stamp():
     zorder 5
+    if chapter.startswith("01") or chapter.startswith("02"):
+        text "参考实景绘制 · 非实拍" xpos 24 ypos 24 size 15 color "#ffffff" outlines [(1, "#183343", 0, 0)]
     frame:
         xpos 920 ypos 28
         padding (18, 10)
@@ -63,6 +65,6 @@ screen demo_end():
         text "今日留下的线索：[clue]" size 24 xalign .5
         text "林晴的信任：[affection_b]    沈知遥的信任：[affection_c]" size 20 xalign .5
         text "后续章节开发中" size 24 xalign .5
-        text "当前为占位美术原型；实景照片、正式立绘和配乐将在后续加入。" size 18 xalign .5
+        text "已加入两张实景参考绘制背景；完整角色表情与配乐继续制作中。" size 18 xalign .5
         null height 20
         textbutton "返回主菜单" action Return() xalign .5 style "title_button"

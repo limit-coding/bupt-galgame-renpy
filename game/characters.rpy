@@ -14,7 +14,8 @@ init python:
         for expression in ('normal', 'happy', 'surprised', 'sad', 'angry'):
             renpy.image((person, expression), 'images/characters/%s_%s.png' % (person, expression))
     for scene_id in ('entrance','road','plaza','library','lab','cafeteria','evening'):
-        renpy.image(('bg', scene_id), 'images/backgrounds/%s.png' % scene_id)
+        path = 'images/backgrounds/illustrated/%s-v1.png' % scene_id if scene_id in ('entrance', 'road') else 'images/backgrounds/%s.png' % scene_id
+        renpy.image(('bg', scene_id), Transform(path, xysize=(1280, 720)))
 transform stage_left:
     xalign .19
     yalign 1.0

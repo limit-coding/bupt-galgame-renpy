@@ -109,3 +109,19 @@ testsuite demo:
         assert screen "confirm"
         click "确定"
         assert screen "main_menu"
+
+    testcase art_preview:
+        if not screen "main_menu":
+            run MainMenu(confirm=False)
+        click "美术预览"
+        assert screen "art_preview"
+        pause 0.7
+        screenshot "original-deepseek.png"
+        click "GPT 娘"
+        pause 0.7
+        screenshot "original-gpt.png"
+        click "Claude 娘"
+        pause 0.7
+        screenshot "original-claude.png"
+        click "返回"
+        assert screen "main_menu"

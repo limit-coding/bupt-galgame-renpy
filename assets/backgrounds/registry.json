@@ -2,33 +2,55 @@
   {
     "id": "entrance",
     "scene_name": "校园入口",
-    "real_location": "西土城校区入口",
+    "real_location": "西土城校区西门",
     "time_of_day": "上午",
-    "source": "原创程序绘制占位图；无用户照片",
-    "raw_path": null,
-    "processed_path": null,
-    "style_version": "placeholder-v1",
-    "game_path": "images/backgrounds/entrance.png",
+    "source": "北邮视觉形象识别系统校园风景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/entrance-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/entrance-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/entrance-v1.png",
     "usage": [
       "start / Scene 1",
       "main_menu"
     ],
-    "is_placeholder": true
+    "is_placeholder": false,
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1055.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/3/32/0A/D05F3BDE83F3FFE3469BC6AC376_FE6A2291_67EFCF.jpg",
+    "reference_file": "assets/backgrounds/references/west-gate-official.jpg",
+    "generated_date": "2026-10-09",
+    "accuracy": "建筑/道路主要形态参考实景；景观细节、光照与铺装非测绘还原；参考照片未核实拍摄年份",
+    "license_note": "照片来源有版权声明，未据公开可见推定可再分发；发行包不包含参考原图。",
+    "render_size": [
+      1280,
+      720
+    ]
   },
   {
     "id": "road",
     "scene_name": "校园道路",
-    "real_location": "校内道路，待照片确认",
+    "real_location": "西土城校区摩斯码路",
     "time_of_day": "上午",
-    "source": "原创程序绘制占位图；无用户照片",
-    "raw_path": null,
-    "processed_path": null,
-    "style_version": "placeholder-v1",
-    "game_path": "images/backgrounds/road.png",
+    "source": "北邮视觉形象识别系统校园风景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/road-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/road-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/road-v1.png",
     "usage": [
       "start / Scene 2"
     ],
-    "is_placeholder": true
+    "is_placeholder": false,
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1060.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/E/CA/A4/4973B9D0D6B910392272E5FCB6B_ADAAE8D5_8C6CC.jpg",
+    "reference_file": "assets/backgrounds/references/morse-road-official.jpg",
+    "generated_date": "2026-10-09",
+    "accuracy": "建筑/道路主要形态参考实景；景观细节、光照与铺装非测绘还原；参考照片未核实拍摄年份",
+    "license_note": "照片来源有版权声明，未据公开可见推定可再分发；发行包不包含参考原图。",
+    "render_size": [
+      1280,
+      720
+    ]
   },
   {
     "id": "plaza",

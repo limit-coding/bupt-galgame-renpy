@@ -1,0 +1,41 @@
+[
+  {
+    "id": "DeepSeek",
+    "file": "images/characters/community-originals/DeepSeek-Girl.png",
+    "source_file": "source_assets/characters/community-originals/DeepSeek-Girl.png",
+    "source_url": "https://github.com/Apprentice-Geo/AI-Fanworks/blob/main/ApprenTice/references/DeepSeek-Girl.png",
+    "creator": "ZipZipPipe",
+    "original_work": "https://www.bilibili.com/video/BV1tE9XBbErS/",
+    "retrieved": "2026-10-09",
+    "sha256": "8f488fb88ee95561a74f492edb92bd80b32cd13822d4e8f2dba25b60d48b1453",
+    "modifications": "无；原样复制，游戏内仅等比例显示缩放",
+    "license_evidence": "ApprenTice/README.md 对原作的许可声明；原作者页面本次未实时读取",
+    "character_origin": "DeepSeek：上善无形原角色，ZipZipPipe 二次设计"
+  },
+  {
+    "id": "ChatGPT",
+    "file": "images/characters/community-originals/ChatGPT-Girl.png",
+    "source_file": "source_assets/characters/community-originals/ChatGPT-Girl.png",
+    "source_url": "https://github.com/Apprentice-Geo/AI-Fanworks/blob/main/ApprenTice/references/ChatGPT-Girl.png",
+    "creator": "ZipZipPipe",
+    "original_work": "https://www.bilibili.com/video/BV1tE9XBbErS/",
+    "retrieved": "2026-10-09",
+    "sha256": "34a406ba635203e8250765f3b60fd55d94a819268929324a2ab9e2ff47019374",
+    "modifications": "无；原样复制，游戏内仅等比例显示缩放",
+    "license_evidence": "ApprenTice/README.md 对原作的许可声明；原作者页面本次未实时读取",
+    "character_origin": "ZipZipPipe AI拟人角色"
+  },
+  {
+    "id": "Claude",
+    "file": "images/characters/community-originals/Claude-Girl.png",
+    "source_file": "source_assets/characters/community-originals/Claude-Girl.png",
+    "source_url": "https://github.com/Apprentice-Geo/AI-Fanworks/blob/main/ApprenTice/references/Claude-Girl.png",
+    "creator": "ZipZipPipe",
+    "original_work": "https://www.bilibili.com/video/BV1tE9XBbErS/",
+    "retrieved": "2026-10-09",
+    "sha256": "d4fdaafe085bdd2dcad7f06666cfd330320af92c4d772d28ac4dae8f024bd488",
+    "modifications": "无；原样复制，游戏内仅等比例显示缩放",
+    "license_evidence": "ApprenTice/README.md 对原作的许可声明；原作者页面本次未实时读取",
+    "character_origin": "ZipZipPipe AI拟人角色"
+  }
+]
