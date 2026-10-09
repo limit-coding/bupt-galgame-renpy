@@ -31,6 +31,7 @@ def import_photo(root, source, scene_id, credit, focal=(.5,.5)):
     shutil.copy2(processed, runtime)
     entry.update(source=credit, raw_path=str(raw.relative_to(root)), processed_path=str(processed.relative_to(root)), source_sha256=digest, original_size=list(size), crop_focal=list(focal), style_version='photo-v1', source_type='photo', is_placeholder=False, privacy_review='人工检查：可识别人脸、证件、车牌；本工具不自动识别人脸')
     registry_path.write_text(json.dumps(entries,ensure_ascii=False,indent=2)+'\n')
+    (root/'game/backgrounds.json').write_text(json.dumps(entries,ensure_ascii=False,indent=2)+'\n')
     return entry
 if __name__ == '__main__':
     p=argparse.ArgumentParser(description=__doc__)

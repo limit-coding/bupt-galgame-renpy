@@ -360,14 +360,14 @@ screen main_menu():
             null height 8
             textbutton "开始游戏" action Start() style "title_button"
             textbutton "读取游戏" action ShowMenu("load") style "title_button"
-            textbutton "设置" action ShowMenu("preferences") style "title_button"
+            textbutton "设置" id "main_settings" action ShowMenu("preferences") style "title_button"
             textbutton "美术预览" action ShowMenu("sprite_gallery") style "title_button"
             textbutton "关于 / 素材说明" action ShowMenu("about") style "title_button"
             textbutton "退出" action Quit(confirm=False) style "title_button"
     vbox:
         xpos 575 ypos 557 spacing 10
         text "FIRST DAY, FIRST SIGNAL." size 24 color "#fff2d8"
-        text "可玩原型 0.3 · 三位 AI 娘 / 六种表情" size 18 color "#edf2ed"
+        text "可玩原型 0.4 · 全场景北邮实景参考绘制" size 18 color "#edf2ed"
         text "虚构故事 · 非学校官方作品" size 16 color "#c7d5d4"
 
 
@@ -416,6 +416,8 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
         add gui.main_menu_background
     else:
         add gui.game_menu_background
+
+    add Solid("#102b3dda")
 
     frame:
         style "game_menu_outer_frame"
@@ -469,6 +471,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     use navigation
 
     textbutton _("返回"):
+        id "menu_return"
         style "return_button"
 
         action Return()

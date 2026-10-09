@@ -37,3 +37,7 @@ v0.2 阶段仅提供白底原图预览。v0.3 已完成下文所述透明表情�
 运行素材：`game/images/characters/ai-girls/{DeepSeek,Claude,ChatGPT}-v1.png`。源版本及来源登记：`source_assets/characters/expression-atlases/`。实际提示词：`docs/ai-expression-prompts.json`。引擎直接裁取图集各格，不另行修改 PNG。
 
 主菜单“美术预览”可以查看全部表情，“原图对照”查看未修改素材。三条剧情分支、表情切换、透明合成和双人站位均纳入原生引擎测试。
+
+## v0.4：校园背景补齐
+
+全部七个剧情背景与菜单衬底均已使用北邮西土城实景参考绘图。新增五张与既有西门/道路画风统一，详见 `campus-backgrounds.md`。此前关于其余背景仍占位的记录属于历史阶段。

@@ -16,6 +16,7 @@ class PhotoImport(unittest.TestCase):
             with Image.open(root/'game'/item['game_path']) as image:
                 self.assertEqual(image.size,(1280,720))
             self.assertFalse(item['is_placeholder'])
+            self.assertEqual(json.loads((root/'game/backgrounds.json').read_text()), json.loads((path/'registry.json').read_text()))
             self.assertEqual(item['source_sha256'],hashlib.sha256(before).hexdigest())
             import_photo(root,source,'road','test photographer',(.1,.9))
             self.assertEqual(len(list((path/'raw').iterdir())),1)

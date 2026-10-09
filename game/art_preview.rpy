@@ -58,7 +58,10 @@ screen sprite_gallery():
                     textbutton name action SetScreenVariable("sprite_emotion", emotion) selected (sprite_emotion == emotion) style "expression_button"
             text "同班同学：DeepSeek 娘\n实验室学姐：Claude 娘\n迎新志愿者：GPT 娘" size 22 color "#bdced3"
             text "原设：ZipZipPipe / 上善无形（DeepSeek）\n以原图制作透明表情版本；原图另存，可对照查看。\n社区同人角色 · 非官方 · 来源与许可见关于页面" size 17 color "#bdced3"
-            textbutton "原图对照" action ShowMenu("art_preview") style "title_button"
+            hbox:
+                spacing 12
+                textbutton "原图对照" action ShowMenu("art_preview") style "title_button" xsize 290
+                textbutton "校园背景" action ShowMenu("campus_gallery") style "title_button" xsize 290
             textbutton "返回主菜单" action ShowMenu("main_menu") style "title_button"
 
 style expression_button is title_button:

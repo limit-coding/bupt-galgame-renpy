@@ -1,0 +1,7 @@
+Scanning project files...
+Scanning Ren'Py files...
+
+
+All packages have been built.
+
+Due to the presence of permission information, unpacking and repacking the Linux and Macintosh distributions on Windows is not supported.

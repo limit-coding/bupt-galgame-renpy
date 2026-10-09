@@ -1,0 +1,5 @@
+PASS BUPTStories-0.4.0-win.zip: ZIP CRC, 7 background byte matches, runtime manifest, executable present, project development/placeholder assets excluded.
+Size: 132639255 bytes; SHA256: 8efd0df27504e9281f65296d1b123fe56a4792bccac6cda1bc2c114e3bbb6f63
+PASS BUPTStories-0.4.0-mac.zip: ZIP CRC, 7 background byte matches, runtime manifest, executable present, project development/placeholder assets excluded.
+Size: 187479940 bytes; SHA256: 0b3b88de3468083999aa61a4d66cfa7fbd32c62833618ff7563d23a5dbd022ed
+Windows physical-device play test and standalone macOS manual interaction test remain unverified.

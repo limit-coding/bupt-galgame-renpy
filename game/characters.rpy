@@ -26,9 +26,15 @@ init python:
     for person in AI_CAST:
         for expression in AI_EXPRESSIONS:
             renpy.image((person, expression), ai_sprite(person, expression))
-    for scene_id in ('entrance','road','plaza','library','lab','cafeteria','evening'):
-        path = 'images/backgrounds/illustrated/%s-v1.png' % scene_id if scene_id in ('entrance', 'road') else 'images/backgrounds/%s.png' % scene_id
-        renpy.image(('bg', scene_id), Transform(path, xysize=(1280, 720)))
+    import json
+    with renpy.file('backgrounds.json') as background_file:
+        BACKGROUNDS = json.load(background_file)
+    BACKGROUND_BY_ID = {item['id']: item for item in BACKGROUNDS}
+    for item in BACKGROUNDS:
+        renpy.image(('bg', item['id']), Transform(item['game_path'], xysize=(1280, 720)))
+    def current_campus_info():
+        attributes = renpy.get_attributes('bg') or ()
+        return BACKGROUND_BY_ID.get(attributes[0], {}) if attributes else {}
 transform stage_left:
     xalign .19
     yalign 1.0

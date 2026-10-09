@@ -3,6 +3,8 @@ import json
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 entries=json.loads((ROOT/'assets/backgrounds/registry.json').read_text())
+assert entries==json.loads((ROOT/'game/backgrounds.json').read_text()), 'Runtime background manifest out of sync'
+assert len(entries)==7 and all(not e['is_placeholder'] for e in entries), 'A story background is still a placeholder'
 ids=set()
 for e in entries:
     assert e['id'] not in ids, f'Duplicate ID: {e["id"]}'
@@ -11,6 +13,8 @@ for e in entries:
     with Image.open(ROOT/'game'/e['game_path']) as im:
         if e.get('source_type') == 'ai_reference_illustration':
             assert abs(im.width/im.height-16/9)<.015 and im.width>=1280, e['id']
+            assert e['reference_url'].startswith('https://'), e['id']
+            assert (ROOT/e['reference_file']).is_file(), e['id']
         else:assert im.size==(1280,720),e['id']
     if not e['is_placeholder']:
         for key in ('raw_path','processed_path'):assert (ROOT/e[key]).is_file(),key

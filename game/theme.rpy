@@ -47,8 +47,10 @@ style button:
 
 screen chapter_stamp():
     zorder 5
-    if chapter.startswith("01") or chapter.startswith("02"):
-        text "参考实景绘制 · 非实拍" xpos 24 ypos 24 size 15 color "#ffffff" outlines [(1, "#183343", 0, 0)]
+    $ campus_info = current_campus_info()
+    if campus_info:
+        $ campus_caption = campus_info.get("display_name", campus_info["real_location"])
+        text campus_caption xpos 24 ypos 24 size 16 color "#ffffff" outlines [(1, "#183343", 0, 0)]
     frame:
         xpos 1258 xanchor 1.0 ypos 16
         padding (12, 8)
@@ -65,6 +67,6 @@ screen demo_end():
         text "今日留下的线索：[clue]" size 24 xalign .5
         text "[classmate_name]的信任：[affection_b]    [senior_name]的信任：[affection_c]" size 20 xalign .5
         text "后续章节开发中" size 24 xalign .5
-        text "三位 AI 娘与六种表情已加入；后续场景与配乐继续制作中。" size 18 xalign .5
+        text "七个北邮实景参考场景 · 三位 AI 娘 · 后续章节制作中" size 18 xalign .5
         null height 20
         textbutton "返回主菜单" action Return() xalign .5 style "title_button"

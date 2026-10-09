@@ -1,0 +1,207 @@
+[
+  {
+    "id": "entrance",
+    "scene_name": "校园入口",
+    "real_location": "西土城校区西门",
+    "time_of_day": "上午",
+    "source": "北邮视觉形象识别系统校园风景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/entrance-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/entrance-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/entrance-v1.png",
+    "usage": [
+      "start / Scene 1",
+      "main_menu"
+    ],
+    "is_placeholder": false,
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1055.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/3/32/0A/D05F3BDE83F3FFE3469BC6AC376_FE6A2291_67EFCF.jpg",
+    "reference_file": "assets/backgrounds/references/west-gate-official.jpg",
+    "generated_date": "2026-10-09",
+    "accuracy": "建筑/道路主要形态参考实景；景观细节、光照与铺装非测绘还原；参考照片未核实拍摄年份",
+    "license_note": "照片来源有版权声明，未据公开可见推定可再分发；发行包不包含参考原图。",
+    "render_size": [
+      1280,
+      720
+    ],
+    "display_name": "北邮 · 西门",
+    "reference_sha256": "989ce920687dfbc424651e7504b9f0e7385bdd7c84ad5862e11a5b9c22e6c515"
+  },
+  {
+    "id": "road",
+    "scene_name": "校园道路",
+    "real_location": "西土城校区摩斯码路",
+    "time_of_day": "上午",
+    "source": "北邮视觉形象识别系统校园风景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/road-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/road-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/road-v1.png",
+    "usage": [
+      "start / Scene 2"
+    ],
+    "is_placeholder": false,
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1060.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/E/CA/A4/4973B9D0D6B910392272E5FCB6B_ADAAE8D5_8C6CC.jpg",
+    "reference_file": "assets/backgrounds/references/morse-road-official.jpg",
+    "generated_date": "2026-10-09",
+    "accuracy": "建筑/道路主要形态参考实景；景观细节、光照与铺装非测绘还原；参考照片未核实拍摄年份",
+    "license_note": "照片来源有版权声明，未据公开可见推定可再分发；发行包不包含参考原图。",
+    "render_size": [
+      1280,
+      720
+    ],
+    "display_name": "北邮 · 摩斯码路",
+    "reference_sha256": "8ebca12eb02d81a704ad064de2021a32eab0efe5ed0b34643d78f2f815df768d"
+  },
+  {
+    "id": "plaza",
+    "scene_name": "校园广场",
+    "real_location": "未来学习大楼前喷泉广场",
+    "time_of_day": "中午",
+    "source": "北邮官方实景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/plaza-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/plaza-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/plaza-v1.png",
+    "usage": [
+      "start / Scene 3"
+    ],
+    "is_placeholder": false,
+    "display_name": "北邮 · 喷泉广场",
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1058.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/E/6C/58/F3EC192C50A79002AA7BB522AB7_8336B9E6_7FF01C.jpg",
+    "reference_file": "assets/backgrounds/references/fountain-official.jpg",
+    "generated_date": "2026-10-09",
+    "render_size": [
+      1280,
+      720
+    ],
+    "accuracy": "主要建筑形态与实景相对应，取景范围、季节、光照和细节为艺术处理；非测绘、非现状照片。",
+    "license_note": "参考照片为北邮官网公开展示，未视作开放再分发许可；参考原图不进入玩家包。",
+    "prompt_file": "docs/campus-background-prompts-v04.json",
+    "reference_sha256": "d97049846012fa649c1d43fbb346a930ba3a76de4364490d22d79e04c41ac7da"
+  },
+  {
+    "id": "library",
+    "scene_name": "图书馆",
+    "real_location": "西土城校区图书馆外景",
+    "time_of_day": "下午",
+    "source": "北邮官方实景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/library-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/library-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/library-v1.png",
+    "usage": [
+      "library_event / Scene 4"
+    ],
+    "is_placeholder": false,
+    "display_name": "北邮 · 图书馆",
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1061.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/B/B0/D2/6953B081EC2D95612A9BB0D44FA_218FC005_780CBC.jpg",
+    "reference_file": "assets/backgrounds/references/library-official.jpg",
+    "generated_date": "2026-10-09",
+    "render_size": [
+      1280,
+      720
+    ],
+    "accuracy": "主要建筑形态与实景相对应，取景范围、季节、光照和细节为艺术处理；非测绘、非现状照片。",
+    "license_note": "参考照片为北邮官网公开展示，未视作开放再分发许可；参考原图不进入玩家包。",
+    "prompt_file": "docs/campus-background-prompts-v04.json",
+    "reference_sha256": "b6b657296a18b7cc5658dd6c6d2a14570116c1b5cb022316629d8d5db99b277d"
+  },
+  {
+    "id": "lab",
+    "scene_name": "实验室",
+    "real_location": "西土城校区教三楼外景",
+    "time_of_day": "下午",
+    "source": "北邮官方实景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/lab-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/lab-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/lab-v1.png",
+    "usage": [
+      "lab_event / Scene 4"
+    ],
+    "is_placeholder": false,
+    "display_name": "北邮 · 教三楼",
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1064.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/7/1F/D4/246A28E096E40619968984853A8_2C2896E9_C4C7AF.jpg",
+    "reference_file": "assets/backgrounds/references/teaching3-official.jpg",
+    "generated_date": "2026-10-09",
+    "render_size": [
+      1280,
+      720
+    ],
+    "accuracy": "主要建筑形态与实景相对应，取景范围、季节、光照和细节为艺术处理；非测绘、非现状照片。",
+    "license_note": "参考照片为北邮官网公开展示，未视作开放再分发许可；参考原图不进入玩家包。",
+    "prompt_file": "docs/campus-background-prompts-v04.json",
+    "story_note": "实验室路线安排为教三楼前的虚构声音体验，不表示真实实验室内部。",
+    "reference_sha256": "273e192303d3a2a4d98d97f8cb5fec99b709a769c896fdd3135aab8214c827aa"
+  },
+  {
+    "id": "cafeteria",
+    "scene_name": "食堂",
+    "real_location": "西土城校区综合餐厅楼一层风味餐厅",
+    "time_of_day": "下午",
+    "source": "北邮官方实景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/cafeteria-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/cafeteria-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/cafeteria-v1.png",
+    "usage": [
+      "cafeteria_event / Scene 4"
+    ],
+    "is_placeholder": false,
+    "display_name": "北邮 · 风味餐厅",
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://hq.bupt.edu.cn/info/1010/1380.htm",
+    "reference_image_url": "https://hq.bupt.edu.cn/__local/0/E0/47/9A50428714204A230D227FA5D4B_A08FA34B_E43D.png",
+    "reference_file": "assets/backgrounds/references/cafeteria-official-0.jpg",
+    "generated_date": "2026-10-09",
+    "render_size": [
+      1280,
+      720
+    ],
+    "accuracy": "主要建筑形态与实景相对应，取景范围、季节、光照和细节为艺术处理；非测绘、非现状照片。",
+    "license_note": "参考照片为北邮官网公开展示，未视作开放再分发许可；参考原图不进入玩家包。",
+    "prompt_file": "docs/campus-background-prompts-v04.json",
+    "reference_publication_date": "2025-09-08",
+    "reference_sha256": "400d09b7b0128ff9b4d27dcc57638783aa6a0fc461042901e0e6c2a657d58d2a"
+  },
+  {
+    "id": "evening",
+    "scene_name": "傍晚校园",
+    "real_location": "西土城校区摩斯码路（傍晚光照版本）",
+    "time_of_day": "傍晚（艺术光照变体）",
+    "source": "北邮官方实景照片；内置 imagegen 参考绘制",
+    "raw_path": "source_assets/backgrounds/generated/evening-v1.png",
+    "processed_path": "game/images/backgrounds/illustrated/evening-v1.png",
+    "style_version": "anime-campus-v1",
+    "game_path": "images/backgrounds/illustrated/evening-v1.png",
+    "usage": [
+      "evening_scene / Scene 5"
+    ],
+    "is_placeholder": false,
+    "display_name": "北邮 · 摩斯码路 · 傍晚",
+    "source_type": "ai_reference_illustration",
+    "reference_url": "https://vi.bupt.edu.cn/info/1102/1060.htm",
+    "reference_image_url": "https://vi.bupt.edu.cn/__local/E/CA/A4/4973B9D0D6B910392272E5FCB6B_ADAAE8D5_8C6CC.jpg",
+    "reference_file": "assets/backgrounds/references/morse-road-official.jpg",
+    "generated_date": "2026-10-09",
+    "render_size": [
+      1280,
+      720
+    ],
+    "accuracy": "主要建筑形态与实景相对应，取景范围、季节、光照和细节为艺术处理；非测绘、非现状照片。",
+    "license_note": "参考照片为北邮官网公开展示，未视作开放再分发许可；参考原图不进入玩家包。",
+    "prompt_file": "docs/campus-background-prompts-v04.json",
+    "derived_from": "road",
+    "reference_sha256": "8ebca12eb02d81a704ad064de2021a32eab0efe5ed0b34643d78f2f815df768d"
+  }
+]
