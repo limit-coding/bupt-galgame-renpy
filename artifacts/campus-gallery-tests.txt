@@ -21,4 +21,3 @@
 
 [rpytest] Time: 17.904 s
 [rpytest] Status: PASSED
-

@@ -22,4 +22,3 @@ NATIVE_FOCUS_BEFORE_RETURN True
 
 [rpytest] Time: 3.886 s
 [rpytest] Status: PASSED
-
