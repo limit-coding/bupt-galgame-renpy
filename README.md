@@ -6,7 +6,8 @@
 
 ## 立即试玩
 
-- GitHub 工程：<https://github.com/limit-coding/bupt-galgame-renpy>；0.4.0 下载：<https://github.com/limit-coding/bupt-galgame-renpy/releases/tag/v0.4.0>。当前仓库为私有，需要有仓库访问权限的 GitHub 账号。
+- GitHub 公开工程：<https://github.com/limit-coding/bupt-galgame-renpy>；0.4.0 下载：<https://github.com/limit-coding/bupt-galgame-renpy/releases/tag/v0.4.0>。
+- 3D 校园漫游项目单独维护于：<https://github.com/limit-coding/bupt-galgame>。
 - 本机 macOS：双击工程内 `Start.command`；已安装的 SDK 位于 `/Users/limit/Tools/renpy-8.5.3-sdk`。
 - Windows：解压随交付提供的 `BUPTStories-0.4.0-win.zip`，运行 `BUPTStories.exe`，无需安装 Python 或 Ren’Py。
 - macOS 独立包：解压 `BUPTStories-0.4.0-mac.zip`，打开 `BUPTStories.app`。包未做开发者签名/公证；如系统阻止，可在确认来源后使用系统“仍要打开”流程。
